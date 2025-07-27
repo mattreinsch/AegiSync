@@ -1,67 +1,125 @@
-# RefactorAI
+#  RefactorAI
 
-RefactorAI is a Firebase web app that scans your code for security vulnerabilities and uses AI to suggest fixes. It also integrates with GitHub to scan your pull requests, helping you catch and fix security issues before they make it into your codebase.
+RefactorAI is an AI-powered DevSecOps assistant designed to identify and remediate security vulnerabilities in your code and pull requests — **before they hit production**.
 
-## Features
+Built with [Next.js](https://nextjs.org/), Firebase, and OpenAI, it integrates seamlessly with GitHub to provide **real-time PR scanning**, **on-demand static analysis**, and **AI-suggested fixes** — right in your browser.
 
-- **Code Analysis:** Scans your code for common security vulnerabilities like SQL injection, XSS, and more.
-- **AI-Powered Suggestions:** Provides intelligent, context-aware suggestions to fix identified vulnerabilities.
-- **GitHub Integration:** Automatically scans new pull requests in your repositories and posts comments with suggested fixes.
-- **Web-Based Interface:** Easy-to-use web interface for viewing scan results and managing your repositories.
+---
 
-## Getting Started
+##  Live Demo
 
-### Prerequisites
+ [Visit RefactorAI](https://refactorai.app) (Demo-ready MVP)
 
-- Node.js (v18 or later)
-- Firebase Account
-- Stripe Account
-- GitHub Account
+---
 
-### Installation
+## ✨ Features
 
-1. **Clone the repository:**
+- ✅ **Security Vulnerability Detection**  
+  Automatically detects SQL injection, XSS, unsafe regex, insecure deserialization, and more.
 
-   ```bash
-   git clone https://github.com/your-username/refactorai.git
-   cd refactorai
-   ```
+-  **AI-Powered Remediation**  
+  Context-aware suggestions to harden your code using LLMs.
 
-2. **Install dependencies:**
+-  **GitHub Integration**  
+  Scans new pull requests and comments with inline security suggestions.
 
-   ```bash
-   npm install
-   ```
+-  **On-Demand Code Scanner**  
+  Paste your code into the web app and get immediate security hardening advice.
 
-3. **Set up environment variables:**
+-  **Security Dashboard**  
+  Live feed of your repo’s pull request scan history and outcomes.
 
-   Copy the `.env.example` file to a new file named `.env` and fill in the required values:
+-  **Stripe Integration**  
+  Basic authentication and payment handling built-in for SaaS monetization.
 
-   ```bash
-   cp .env.example .env
-   ```
+---
 
-   You will need to create a Firebase project, a Stripe account, and a GitHub App to get the necessary credentials.
+## ️ Tech Stack
 
-4. **Run the development server:**
+- **Frontend**: Next.js, TailwindCSS  
+- **Backend**: Firebase Functions  
+- **AI**: OpenAI API  
+- **CI/CD**: GitHub Actions  
+- **Payments**: Stripe  
+- **Auth**: Firebase Auth with GitHub OAuth
 
-   ```bash
-   npm run dev
-   ```
+---
 
-   The app will be available at `http://localhost:3000`.
+## ⚙️ Getting Started
+
+### 1. Clone and install
+
+```bash
+git clone https://github.com/mattreinsch/refactorai.git
+cd refactorai
+npm install
+```
+### 2. Configure environment
+```bash
+cp .env.example .env
+```
+Update .env with:
+
+*   Firebase project credentials
+
+*   OpenAI API key
+
+*   GitHub App credentials
+
+*   Stripe test keys
+
+### 3. Run locally
+```bash
+npm run dev
+```
+App will run at: `http://localhost:3000`
 
 ## Usage
+*   Log in with GitHub.
 
-1. **Log in with your GitHub account.**
-2. **Connect your repositories.**
-3. **New pull requests will be automatically scanned for vulnerabilities.**
-4. **View scan results and apply suggested fixes.**
+*   Connect a repository.
 
-## Future Improvements
+*   Create a pull request.
 
-- [ ] Add support for more programming languages.
-- [ ] Improve the accuracy of the AI-powered suggestions.
-- [ ] Add more detailed reporting and analytics.
-- [ ] Integrate with other Git providers like GitLab and Bitbucket.
-- [ ] Create a CI/CD pipeline for automated testing and deployment.
+*   View inline security comments.
+
+*   Paste raw code into the dashboard for direct feedback.
+
+## Folder Structure
+```bash
+├── ai/              # LLM prompt templates and API logic
+├── api/             # Firebase function endpoints
+├── components/      # React UI components
+├── context/         # App context providers
+├── app/             # Next.js app routing and layout
+├── hooks/           # Reusable logic
+├── workflows/       # GitHub Actions CI/CD
+├── demo/            # Demo/test code and PRs
+└── .env.example     # Required environment variables
+```
+## ️ Roadmap
+*   Add GitLab & Bitbucket support
+
+*   Multi-language scanning (Python, Go, Java)
+
+*   Enterprise RBAC and audit logs
+
+*   Slack/Discord notification integrations
+
+*   SOC 2 readiness features
+
+## ‍ Contributing
+RefactorAI is pre-release but open to contributions!
+To get involved:
+
+*   Fork this repo
+
+*   Create a feature branch
+
+*   Submit a pull request
+
+## License
+MIT — see LICENSE
+
+## Built by Matt Reinsch
+Scaling GenAI SaaS, LLM Infrastructure, and ML Systems for real-world impact.
