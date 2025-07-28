@@ -17,19 +17,19 @@ Built with [Next.js](https://nextjs.org/), Firebase, and OpenAI, it integrates s
 - ✅ **Security Vulnerability Detection**  
   Automatically detects SQL injection, XSS, unsafe regex, insecure deserialization, and more.
 
--  **AI-Powered Remediation**  
+- ✅ **AI-Powered Remediation**  
   Context-aware suggestions to harden your code using LLMs.
 
--  **GitHub Integration**  
+- ✅ **GitHub Integration**  
   Scans new pull requests and comments with inline security suggestions.
 
--  **On-Demand Code Scanner**  
+- ✅ **On-Demand Code Scanner**  
   Paste your code into the web app and get immediate security hardening advice.
 
--  **Security Dashboard**  
+- ✅ **Security Dashboard**  
   Live feed of your repo’s pull request scan history and outcomes.
 
--  **Stripe Integration**  
+- ✅ **Stripe Integration**  
   Basic authentication and payment handling built-in for SaaS monetization.
 
 ---
