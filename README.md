@@ -8,7 +8,7 @@ Built with [Next.js](https://nextjs.org/), Firebase, and OpenAI, it integrates s
 
 ##  Live Demo
 
- [Visit RefactorAI](https://refactorai.app) (Demo-ready MVP)
+ [Visit AegiSync](https://aegisync.dev) 
 
 ---
 
