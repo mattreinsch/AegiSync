@@ -1,6 +1,6 @@
 #  AegiSync
 
-RefactorAI is an AI-powered DevSecOps assistant designed to identify and remediate security vulnerabilities in your code and pull requests — **before they hit production**.
+AegiSync is an AI-powered DevSecOps assistant designed to identify and remediate security vulnerabilities in your code and pull requests — **before they hit production**.
 
 Built with [Next.js](https://nextjs.org/), Firebase, and OpenAI, it integrates seamlessly with GitHub to provide **real-time PR scanning**, **on-demand static analysis**, and **AI-suggested fixes** — right in your browser.
 
@@ -51,7 +51,7 @@ Built with [Next.js](https://nextjs.org/), Firebase, and OpenAI, it integrates s
 
 ```bash
 git clone https://github.com/mattreinsch/refactorai.git
-cd refactorai
+cd aegisync
 npm install
 ```
 ### 2. Configure environment
@@ -109,7 +109,7 @@ App will run at: `http://localhost:3000`
 *   SOC 2 readiness features
 
 ## ‍ Contributing
-RefactorAI is pre-release but open to contributions!
+AegiSync is pre-release but open to contributions!
 To get involved:
 
 *   Fork this repo
