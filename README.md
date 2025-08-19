@@ -1,4 +1,4 @@
-#  RefactorAI
+#  AegiSync
 
 RefactorAI is an AI-powered DevSecOps assistant designed to identify and remediate security vulnerabilities in your code and pull requests — **before they hit production**.
 
